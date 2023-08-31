@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .boxes {
+        display: grid;
+        grid-template-columns: repeat(10, auto);
+      }
+      .box {
+        padding: 78px;
+        background-color: #033f49;
+      }
+      .light-green {
+        background: #00a9a1;
+        font-size: 2rem;
+        display: grid;
+        place-items: center;
+      }
+      .heading {
+        position: absolute;
+        color: white;
+        max-width: 300px;
+        font-size: 2.5rem;
+        top: 50%;
+        left: 0%;
+        transform: translate(30%, -80%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="boxes">
+      <h1 class="heading">Building resilient communities for the future</h1>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box hide"></div>
+      <div class="box"></div>
+      <div class="box light-green">&darr;</div>
+    </section>
+    <script>
+      let eachBox = gsap.utils.toArray(".hide");
+      const tl = gsap.timeline();
+      tl.to(eachBox, {
+        autoAlpha: 0,
+        duration: 1,
+        stagger: {
+          amount: 4,
+          from: "random",
+        },
+      });
+      tl.from(".heading", {
+        autoAlpha: 0,
+        y: -15,
+      });
+    </script>
+  </body>
+</html>

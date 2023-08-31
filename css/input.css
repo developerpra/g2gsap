@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: clamp(21.25rem, 0.7692rem + 91.0256vw, 110rem);
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("./fonts/Avenir-400.otf") format("otf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/avenir_lt_std_95_black-webfont.woff2") format("woff2"),
+    url("../fonts/avenir_lt_std_95_black-webfont.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir Ltd Std85_Heavy";
+  src: url("../fonts/avenir_lt_std_85_heavy-webfont.woff2") format("woff2"),
+    url("../fonts/avenir_lt_std_85_heavy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body {
+  overflow: hidden;
+  font-family: "Avenir", sans-serif;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.light-green {
+  background: #00a9a1;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+}
+.heading {
+  position: absolute;
+  color: white;
+  max-width: 300px;
+  font-size: 2.5rem;
+  top: 50%;
+  left: 0%;
+  transform: translate(30%, -80%);
+}
+.bg-img {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 1;
+}
+.bg-primary {
+  background-color: #033f49;
+}
+.absolute {
+  position: absolute;
+}
+.main-box {
+  width: 540px;
+  height: 40vh;
+  top: 50%;
+  transform: translateY(-65%);
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.main-box h1 {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.box {
+  position: absolute;
+  background-color: #033f49;
+}
+
+.box-1 {
+  bottom: 0px;
+  right: -180px;
+}
+.box2 {
+  height: 90px;
+}
+.box-2 {
+  position: absolute;
+  background-color: #033f49;
+  width: 180px;
+  height: 90px;
+  bottom: -90px;
+  right: 0;
+}
+.box-3 {
+  bottom: -180px;
+  left: 0;
+}
+.box-4 {
+  bottom: -270px;
+  left: 180px;
+}
+.box-5 {
+  top: -180px;
+  right: -180px;
+}
+.box3 {
+  width: 360px;
+}
+
+.box1 {
+  top: -180px;
+  left: 0;
+} */
